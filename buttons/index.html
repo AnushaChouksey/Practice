@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JS learning</title>
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+
+	<script type="text/javascript">
+		function funcClick2(){
+			var z = document.getElementById("mypara");
+			var array = [1,2,3,4,5,6,7];
+			var i;
+			var text = "";
+			for(i=0; i<array.length; i++){
+				text += array[i] + "<hr/>" ;
+			}
+			z.innerHTML = text;
+		}
+		function funcClick(){
+			var x = document.getElementById("mypara");
+			x.innerHTML = Date();
+		}
+		function funcClick1(){
+			var y = document.getElementById("mypara");
+			y.innerHTML = "Hey you did a basic JS program."
+		}
+		
+	</script>
+
+</head>
+<body>
+	<p id="mypara">Change sentence using JS.</p>
+	<button type="button"  onclick="funcClick()">click me!</button>
+
+	<button type="button" class="custom-btn btn-1" onclick="funcClick1()"><span>click me!</span></button>
+
+	<button type="button"  onclick="funcClick2()">click me!</button>
+
+</body>
+</body>
+</html>
